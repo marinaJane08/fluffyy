@@ -1,0 +1,116 @@
+.xiziArticle {
+    border: 1px solid #eee !important;
+    box-shadow: 3px 0px 3px #7277bb91 !important;
+    float: left;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 49% !important;
+}
+
+#xiziWrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1111;
+    background: #f2f2f5;
+    overflow: hidden;
+}
+
+#xiziMask h1, #xiziMask h2, #xiziMask h3, #xiziMask h4, #xiziMask h5, #xiziMask h6, #xiziMask p, #xiziMask blockquote, #xiziMask pre,
+#xiziMask a, #xiziMask abbr, #xiziMask acronym, #xiziMask address, #xiziMask big, #xiziMask cite, #xiziMask code,
+#xiziMask del, #xiziMask dfn, #xiziMask em, #xiziMask img, #xiziMask ins, #xiziMask kbd, #xiziMask q, #xiziMask s, #xiziMask samp,
+#xiziMask small, #xiziMask strike, #xiziMask strong, #xiziMask sub, #xiziMask sup, #xiziMask tt, #xiziMask var,
+#xiziMask b, #xiziMask u, #xiziMask i, #xiziMask center,
+#xiziMask dl, #xiziMask dt, #xiziMask dd, #xiziMask ol, #xiziMask ul, #xiziMask li,
+#xiziMask fieldset, #xiziMask form, #xiziMask label, #xiziMask legend,
+#xiziMask table, #xiziMask caption, #xiziMask tbody, #xiziMask tfoot, #xiziMask thead, #xiziMask tr, #xiziMask th, #xiziMask td,
+#xiziMask article, #xiziMask aside, #xiziMask canvas, #xiziMask details, #xiziMask embed, #xiziMask 
+figure, #xiziMask figcaption, #xiziMask footer, #xiziMask header, #xiziMask hgroup, #xiziMask 
+menu, #xiziMask nav, #xiziMask output, #xiziMask ruby, #xiziMask section, #xiziMask summary,
+#xiziMask time, #xiziMask mark, #xiziMask audio, #xiziMask video {
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+}
+
+#xiziMask {
+    float: right;
+    background: #f2f2f5;
+    box-shadow: -3px 0px 3px #7277bb91;
+    width: 50%;
+    position: relative;
+}
+
+.xiziInput, .xiziTextarea {
+    position: absolute;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ddd;
+    padding: 3px;
+}
+
+.xiziInput:focus, .xiziTextarea:focus {
+    box-shadow: 3px 3px 3px #7277bb91 !important;
+}
+
+.xiziItem {
+    /* box-shadow: rgb(255, 128, 128) 0px 0px 8px; */
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+/* .xiziItem:hover {
+    box-shadow: 3px 3px 3px #7277bb91 !important;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+
+.xiziItem:hover {
+    text-shadow: 3px 3px 3px #7277bb91 !important;
+    cursor: pointer;
+}
+
+.xiziItem::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.xiziCode {
+    overflow-x: auto;
+    max-width: 100%;
+    text-shadow: none !important;
+}
+
+.xiziCode:hover {
+    text-shadow: none !important;
+    box-shadow: 3px 3px 3px #7277bb91 !important;
+}
+
+.xiziAnswerRight {
+    background: rgba(0, 0, 0, 0);
+    width: auto !important;
+    border: none;
+    color: #4CAF50 !important;
+    resize: none;
+}
+
+.xiziInputHide {
+    background: #fff;
+    color: rgba(255, 255, 255, 0);
+    padding: 2px 10px 2px 2px;
+    border-radius: 5px;
+}
+
+.xiziInputShow {
+    color: rgb(86, 102, 133);
+    position: absolute;
+    outline: none;
+}

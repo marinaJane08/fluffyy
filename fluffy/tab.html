@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>xizi-tab</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <link rel="icon" href="./icon.ico" type="image/x-icon" />
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            background: #eee;
+            font-size: 20px;
+        }
+
+        .item {
+            display: inline-block;
+            margin: 1rem calc(10%/4);
+            margin-bottom: 0;
+            width: 30%;
+            padding: 1rem 0.5rem;
+            box-sizing: border-box;
+            box-shadow: -1px -2px 1px #7277bb91 inset;
+            border-radius: 0.25rem;
+            background: #fff;
+            text-align: center;
+            transition: all 1s;
+            font-size: 0.8rem;
+            word-wrap: break-word;
+        }
+
+        .item:hover {
+            box-shadow: -2px -3px 1px #4894c191 inset;
+        }
+
+        .item:nth-child(3n-1) {
+            margin: 1rem 0 0 0;
+        }
+
+        .hide {
+            transform: scale(0, 0);
+        }
+
+        .link {
+            cursor: pointer;
+        }
+
+        .search {
+
+            width: 40%;
+            margin: 0 auto;
+            margin-top: 1rem;
+            position: relative;
+        }
+
+        .search #search {
+            border: none;
+            outline: none;
+            font-size: 1rem;
+            line-height: 1.8rem;
+            border-radius: 5px;
+            padding: 0.1rem 0.5rem;
+            color: #444;
+            box-shadow: 3px 3px 1px #ada4b3;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #time {
+            position: absolute;
+            right: 0.5rem;
+            top: 0;
+            color: #9a89a9;
+            cursor: default;
+        }
+
+        .search::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        @media (max-width: 768px) {
+            .item {
+                margin: 1rem calc(20%/3);
+                width: 40%;
+            }
+            .item:nth-child(3n-1) {
+                margin: 1rem calc(20%/3);
+            }
+            .item:nth-child(2n) {
+                margin: 1rem 1rem 0 0;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <b id="time">Time</b>
+    <div class="search">
+        <input id="search" placeholder="输入关键词..." />
+    </div>
+    <div id="app">
+    </div>
+    <!-- <script type="text/javascript" src="scripts/react.min.js"></script>
+<script type="text/javascript" src="scripts/react-dom.min.js"></script> -->
+    <!-- <script type="text/javascript" src="scripts/babel.min.js"></script> -->
+    <script src="scripts/localforage.min.js"></script>
+    <script src="scripts/tab.js"></script>
+</body>
+
+</html>
